@@ -1,0 +1,44 @@
+﻿@using Microsoft.Extensions.Options
+@inject Infrastructure.Settings.ApplicationSettings applicationSettings
+
+@{
+	var supportedUICultures =
+			applicationSettings
+			.CultureSettings?
+			.SupportedCultureNames?
+			.ToList();
+
+	if (supportedUICultures == null ||
+		supportedUICultures.Count <= 1 ||
+		applicationSettings == null
+		)
+	{
+		return;
+	}
+
+	var currentCultureName =
+		System.Threading.Thread
+		.CurrentThread.CurrentUICulture.Name;
+}
+
+<span class="d-flex">
+	@foreach (var supportedCultureName in supportedUICultures)
+	{
+		var supportedCulture =
+		new System.Globalization.CultureInfo(name: supportedCultureName);
+
+		var country =
+		supportedCultureName[3..].ToLower();
+
+		var language =
+		supportedCulture.Parent.NativeName;
+
+		if (currentCultureName != supportedCultureName)
+		{
+			<a href="/ChangeCulture/@(supportedCultureName)" class="nav-link text-dark">
+				@(language)
+				<span class="fi fi-@(country)"></span>
+			</a>
+		}
+	}
+</span>

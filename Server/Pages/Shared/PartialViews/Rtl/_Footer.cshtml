@@ -1,0 +1,18 @@
+﻿
+<footer class="footer border-top py-3 bg-light text-muted fixed-bottom">
+	<div class="container text-muted">
+		<environment include="Development" exclude="Production">
+			Development Mode
+		</environment>
+
+		<environment include="Production" exclude="Development">
+			Production Mode
+		</environment>
+
+		|
+		&copy;1401
+
+		|
+		@(Resources.DataDictionary.SiteTitle)
+	</div>
+</footer>
