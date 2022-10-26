@@ -1,30 +1,34 @@
-﻿<header>
-	<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light border-bottom box-shadow fixed-top">
+﻿@{
+	var textColorClass = "text-light";
+}
+
+<header>
+	<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-gradient border-bottom box-shadow fixed-top">
 		<div class="container">
-			<a class="navbar-brand" asp-page="/Index">
+			<a class="navbar-brand @(textColorClass)" asp-page="/Index">
 				@(Resources.DataDictionary.SiteTitle)
 			</a>
 
-			<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button type="button" class="navbar-toggler @(textColorClass)" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link text-dark" asp-page="/Index">
+						<a class="nav-link @(textColorClass)" asp-page="/Index">
 							@(Resources.PageTitles.Index)
 						</a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link text-dark" asp-page="/About">
+						<a class="nav-link @(textColorClass)" asp-page="/About">
 							@(Resources.PageTitles.About)
 						</a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link text-dark" asp-page="/Contact">
+						<a class="nav-link @(textColorClass)" asp-page="/Contact">
 							@(Resources.PageTitles.Contact)
 						</a>
 					</li>

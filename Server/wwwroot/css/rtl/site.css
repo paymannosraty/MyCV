@@ -2,6 +2,7 @@
 
 body {
 	font-family: IRANSansX !important;
+	background-color: cadetblue;
 }
 
 h1, h2, h3, h4, h5, h6, input, textarea {
@@ -14,4 +15,31 @@ h1 {
 
 .ltr {
 	direction: ltr;
+}
+
+.wrapper {
+	/*This part is important for centering*/
+	display: grid;
+	place-items: center;
+}
+
+.typing-demo {
+	width: 17ch;
+	animation: typing 2s steps(17), blink .5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-left: 2px solid;
+	font-size: 25px;
+}
+
+@keyframes typing {
+	from {
+		width: 0%
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent
+	}
 }

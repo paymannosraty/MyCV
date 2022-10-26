@@ -421,7 +421,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Introduction.
+        ///   Looks up a localized string similar to i&apos;m a developer.
         /// </summary>
         public static string Introduction {
             get {

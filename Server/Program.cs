@@ -11,6 +11,8 @@ var webApplicationOptions =
 var builder =
 	WebApplication.CreateBuilder(options: webApplicationOptions);
 
+builder.Services.AddHttpContextAccessor();
+
 builder.Services.AddRazorPages();
 
 builder.Services.Configure<Infrastructure.Settings.ApplicationSettings>
