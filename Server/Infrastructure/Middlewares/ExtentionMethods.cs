@@ -20,5 +20,10 @@
 		{
 			return app.UseMiddleware<ActivationKeysHandlerMiddleware>();
 		}
+
+		public static IApplicationBuilder UseCustomStaticFiles(this IApplicationBuilder app)
+		{
+			return app.UseMiddleware<CustomStaticFilesHandlerMiddleware>();
+		}
 	}
 }
