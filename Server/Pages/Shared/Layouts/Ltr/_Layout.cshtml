@@ -6,7 +6,7 @@
 
 <!doctype html>
 
-<html lang="@(currentCultureName)" dir="ltr">
+<html lang="@(currentCultureName)" dir="ltr" style="height:90%;">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,14 +24,9 @@
 
 <body>
 	<partial name="PartialViews/Ltr/_Header" />
-	<main role="main" class="my-2 py-4">
-		<div class="container">
-			<div class="row">
-				<div class="col mx-0 p-5 border border-2 border-dark rounded-3">
-					@(RenderBody())
-				</div>
-			</div>
-		</div>
+
+	<main role="main" class="mt-2 mb-0 pt-5 h-100">
+		@(RenderBody())
 	</main>
 
 	<partial name="PartialViews/Ltr/_Footer" />

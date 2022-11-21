@@ -208,10 +208,10 @@
     <value>File Manager</value>
   </data>
   <data name="FirstName" xml:space="preserve">
-    <value>First Name</value>
+    <value>Payman</value>
   </data>
   <data name="FullName" xml:space="preserve">
-    <value>Full Name</value>
+    <value>Payman Nosraty</value>
   </data>
   <data name="Gender" xml:space="preserve">
     <value>Gender</value>
@@ -295,7 +295,7 @@
     <value>Languages</value>
   </data>
   <data name="LastName" xml:space="preserve">
-    <value>Last Name</value>
+    <value>Nosraty</value>
   </data>
   <data name="Layout" xml:space="preserve">
     <value>Layout</value>
@@ -404,6 +404,9 @@
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>
+  </data>
+  <data name="ShortDescription" xml:space="preserve">
+    <value>This is Payman Nosraty,&lt;br /&gt;I design and develop web sites&lt;br /&gt;based on ASP .NET Core&lt;br /&gt;with MVC and RAZOR PAGES architect&lt;br /&gt;and C# language</value>
   </data>
   <data name="SiteAuthor" xml:space="preserve">
     <value>Payman Nosraty</value>

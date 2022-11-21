@@ -1,21 +1,11 @@
-﻿body{
-	
-}
-
-.wrapper {
-	/*This part is important for centering*/
-	display: grid;
-	place-items: center;
-}
-
-.typing-demo {
-	width: 13ch;
-	animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-	white-space: nowrap;
+﻿.typing-demo {
+	width: 22vw;
+	font-size: 3vw;
 	overflow: hidden;
+	white-space: nowrap;
+	font-weight:500;
 	border-right: 2px solid;
-	font-family: 'Times New Roman';
-	font-size: 30px;
+	animation: typing 2s steps(22), blink .5s step-end infinite alternate;
 }
 
 @keyframes typing {
@@ -28,4 +18,9 @@
 	50% {
 		border-color: transparent
 	}
+}
+
+#descriptionindex{
+	/*font-size: 2vw;*/
+
 }

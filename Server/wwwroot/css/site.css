@@ -1,19 +1,32 @@
 ﻿body {
-	/*background-color: #4ddfe9;*/
-	/*	background-image: url(https://images8.alphacoders.com/559/thumb-1920-559128.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: absolute;
-	height: 85%;
-	width: 100%;
-	top: 60px;*/
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: top;
-	background-image: url(http://bit.ly/2gPLxZ4);
 	width: 100%;
 	height: 100%;
 	letter-spacing: 0.02em;
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	-webkit-font-smoothing: antialiased;
+	background-color: rgb(61, 61, 61);
+	/*background-image: url("/images/bg-dev-9.jpg");*/
+}
+
+#indexmypicture{
+	width: 70%;
+/*	position: relative;
+	top: -2vw;*/
+}
+
+#maindivindex {
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url("/images/bg-dev-7.jpg");
+}
+
+#profiledivindex {
+	width: 35%;
+	background-color: rgba(33, 31, 31, 0.50);
+	position: relative;
 }

@@ -331,7 +331,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to First Name.
+        ///   Looks up a localized string similar to Payman.
         /// </summary>
         public static string FirstName {
             get {
@@ -340,7 +340,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Full Name.
+        ///   Looks up a localized string similar to Payman Nosraty.
         /// </summary>
         public static string FullName {
             get {
@@ -592,7 +592,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Last Name.
+        ///   Looks up a localized string similar to Nosraty.
         /// </summary>
         public static string LastName {
             get {
@@ -921,6 +921,15 @@ namespace Resources {
         public static string Settings {
             get {
                 return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is Payman Nosraty,&lt;br /&gt;I design and develop web sites&lt;br /&gt;based on ASP .NET Core&lt;br /&gt;with MVC and RAZOR PAGES architect&lt;br /&gt;and C# language.
+        /// </summary>
+        public static string ShortDescription {
+            get {
+                return ResourceManager.GetString("ShortDescription", resourceCulture);
             }
         }
         
