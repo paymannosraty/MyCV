@@ -24,7 +24,6 @@ builder.Services.Configure<Infrastructure.Settings.ApplicationSettings>
 			serviceType.GetRequiredService
 			<Microsoft.Extensions.Options.IOptions
 			<Infrastructure.Settings.ApplicationSettings>>().Value;
-		//this is a test
 
 		return result;
 	});
@@ -49,8 +48,8 @@ else
 
 app.UseHttpsRedirection();
 
-app.UseCustomStaticFiles();
-//app.UseStaticFiles();
+//app.UseCustomStaticFiles();
+app.UseStaticFiles();
 
 app.UseActivationKeys();
 
