@@ -1,13 +1,9 @@
-using Microsoft.AspNetCore.Mvc;
+namespace Server.Pages;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Server.Pages
+public class IndexModel : PageModel
 {
-    public class IndexModel : PageModel
-    {
-        public void OnGet()
-        {
-            ///
-        }
-    }
+	public void OnGet()
+	{
+	}
 }
