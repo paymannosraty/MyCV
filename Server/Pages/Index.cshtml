@@ -1,17 +1,9 @@
 ﻿@page
 @model Server.Pages.IndexModel
 @{
+	var textColorClass =
+		Constants.FixedUIParameters.MainTextColor;
 }
-
-@*<div class="d-flex flex-column justify-content-start align-items-center h-100">
-
-	<img src="/images/Payman.jpg" class="border border-3 border-light rounded-4 h-auto" id="indexmypicture" />
-
-	<div class="typing-demo">
-		<span>@(Resources.DataDictionary.Introduction)</span>
-	</div>
-
-</div>*@
 
 <div class="d-flex h-100 justify-content-start rounded-2" id="maindivindex">
 
@@ -25,13 +17,13 @@
 
 			</div>
 
-			<div class="text-white text-center">
+			<div class="@(textColorClass) text-center">
 				<span>@(Resources.DataDictionary.FullName)</span>
 			</div>
 
 			<div class="d-flex justify-content-center">
 
-				<div class="typing-demo text-white">
+				<div class="typing-demo @(textColorClass)">
 					<span>@(Resources.DataDictionary.Introduction)</span>
 				</div>
 
@@ -41,7 +33,7 @@
 
 	</div>
 
-	<div class="w-100 d-flex flex-column justify-content-center text-center text-white h-100">
+	<div class="w-100 d-flex flex-column justify-content-center text-center @(textColorClass) h-100">
 		<div class="d-md-flex justify-content-center">
 			<div class="bg-white bg-opacity-75 rounded-2 border border-2 px-5">
 				<span id="descriptionindex" class="text-dark display-6 fw-semibold space">

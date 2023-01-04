@@ -208,7 +208,7 @@
     <value>نام</value>
   </data>
   <data name="FullName" xml:space="preserve">
-    <value>نام و نام خانوادگی</value>
+    <value>پیمان نصرتی</value>
   </data>
   <data name="Gender" xml:space="preserve">
     <value>جنسیت</value>
@@ -401,6 +401,9 @@
   </data>
   <data name="Settings" xml:space="preserve">
     <value>تنظیمات</value>
+  </data>
+  <data name="ShortDescription" xml:space="preserve">
+    <value>پیمان نصرتی هستم، &lt;br /&gt;طراح و توسعه دهنده وب &lt;br /&gt;بر بستر ASP .NET Core &lt;br /&gt;با معماری های MVC و RAZOR PAGES&lt;br /&gt;و زبان C#</value>
   </data>
   <data name="SiteAuthor" xml:space="preserve">
     <value>پیمان نصرتی</value>

@@ -1,6 +1,10 @@
-﻿
+﻿@{
+	var textColorClass =
+		Constants.FixedUIParameters.MainTextColor;
+}
+
 <footer class="footer border-top py-3 text-muted fixed-bottom bg-light bg-dark">
-	<div class="container text-white">
+	<div class="container @(textColorClass)">
 		<environment include="Development" exclude="Production">
 			Development Mode
 		</environment>
@@ -10,7 +14,7 @@
 		</environment>
 
 		|
-		&copy;2022
+		&copy;2023
 
 		|
 		@(Resources.DataDictionary.SiteTitle)

@@ -6,5 +6,5 @@ public static class FixedUIParameters
 	{
 	}
 
-	public const string NavbarTextColor = "text-white";
+	public const string MainTextColor = "text-white";
 }
